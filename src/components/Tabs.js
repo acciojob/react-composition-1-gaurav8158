@@ -17,9 +17,9 @@ const Tabs=({tabs})=>{
             return <li
             key={index} onClick={()=>handle(index)}
             className={tabContent===index? "active":""}
-            >{tab.title}</li>
-            
-           
+            >{tab.title}<p>
+                {tab.content}
+                </p></li>
            })}
         </ul>
         <div className="content">
